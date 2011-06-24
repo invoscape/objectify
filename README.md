@@ -3,7 +3,13 @@ Objectify
 
 This is a plugin for seamless storage and retrieval of objects/blob as binary datum without worrying about loading or making them storing them the ActiveRecord safe way.
 
-*When do you need it?* - For using non-model instances as attributes for an ActiveRecord objects
+
+__When do you need it?__ - For using non-model instances as attributes for an ActiveRecord objects
+
+
+__How does it differ from Active Record's serialize?__ - Objectify can handle *nested* objects. The "serialize" approach
+will return only an unserialized *YAML::OBJECT* rather than the object of the actual class.
+
 
 __What does it do?__
 
